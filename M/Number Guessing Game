@@ -1,0 +1,21 @@
+import random
+#Generate a random number between 1 and 5
+number = random.randint(1,5)
+print("================================")
+print("NUMBER GUESSING GAME")
+print("NUMBER GUESSING GAME")
+print("================================")
+print("I have selected a number between 1 and 5 .")
+print("Try to guess it!")
+
+while True:
+    guess = int(input("/nEnter your guess:"))
+
+    if guess < number:
+        print("Too low! try again.")
+    elif guess > number:
+        print("Too high! try again.")
+    else:
+        print("Congratulations!")
+        print("you guessed the correct number!")
+        break
